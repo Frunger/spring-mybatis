@@ -18,8 +18,8 @@ public class DemoMain2 {
         System.out.println("----- 修改用户ID -----");
         UserService userService = context.getBean(UserService.class); // 获取 UserService 实例
 
-        int oldId = 9;
-        int newId = 2;
+        int oldId = 10;
+        int newId = 3;
 
         try {
             userService.updateUserId(oldId, newId);

@@ -14,9 +14,9 @@ public class DemoMain1 {
 
         // 插入新用户
         User newUser = new User();
-        newUser.setUsername("sheep");
+        newUser.setUsername("fissy");
         newUser.setSex("F");
-        newUser.setBirthday(java.sql.Date.valueOf("1999-01-01"));
+        newUser.setBirthday(java.sql.Date.valueOf("1229-01-01"));
         newUser.setAddress("Shanghai");
         userService.addUser(newUser);
 
@@ -31,19 +31,19 @@ public class DemoMain1 {
         });
 
         // 根据 ID 查询用户
-        int userId = 1; // 假设要查询的用户 ID 为 1
-        User userById = userService.getUserById(userId);
-        if (userById != null) {
-            System.out.println("根据 ID 查询到的用户信息:");
-            System.out.println("ID: " + userById.getId());
-            System.out.println("Username: " + userById.getUsername());
-            System.out.println("Sex: " + userById.getSex());
-            System.out.println("Birthday: " + new SimpleDateFormat("yyyy-MM-dd").format(userById.getBirthday()));
-            System.out.println("Address: " + userById.getAddress());
-            System.out.println("--------------------------------");
-        } else {
-            System.out.println("未找到 ID 为 " + userId + " 的用户。");
-        }
+//        int userId = 1; // 假设要查询的用户 ID 为 1
+//        User userById = userService.getUserById(userId);
+//        if (userById != null) {
+//            System.out.println("根据 ID 查询到的用户信息:");
+//            System.out.println("ID: " + userById.getId());
+//            System.out.println("Username: " + userById.getUsername());
+//            System.out.println("Sex: " + userById.getSex());
+//            System.out.println("Birthday: " + new SimpleDateFormat("yyyy-MM-dd").format(userById.getBirthday()));
+//            System.out.println("Address: " + userById.getAddress());
+//            System.out.println("--------------------------------");
+//        } else {
+//            System.out.println("未找到 ID 为 " + userId + " 的用户。");
+//        }
 
         // 模糊查询
         System.out.println("模糊查询结果:");
